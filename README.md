@@ -1,3 +1,4 @@
+# subnet-masks-bitwise'
 # Subnet Masks, in Bitwise Terms
 
 COMP 211 Checkoff 3: Applications of Bitwise Operators, Network IP Addresses.
@@ -120,7 +121,7 @@ Routing on the internet comes down to the same `x & mask` we used in class: keep
 
 ## AI use
 
-I used Claude as a tutor to learn this topic. The initial version of `subnet.c` was generated in that conversation, and Claude also helped add the bit view and same-network check. I tested it, found the `/0` bug with the sanitizer and fixed it myself. Full conversation: [LINK TO CHAT]
+I used Claude as a tutor to learn this topic. The initial version of `subnet.c` was generated in that conversation, and Claude also helped add the bit view and same-network check. I tested it, found the `/0` bug with the sanitizer and fixed it myself. Full conversation: https://claude.ai/share/338cbbcf-fb07-4bab-bdf3-54f4acbf3892
 
 ## Resources
 
