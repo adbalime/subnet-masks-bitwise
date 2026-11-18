@@ -1,0 +1,19 @@
+Input:     172.16.5.94/27
+Mask:      255.255.255.224
+Network:   172.16.5.64
+Broadcast: 172.16.5.95
+First:     172.16.5.65
+Last:      172.16.5.94
+Hosts:     30
+
+Bit view (1s in the mask keep a bit, 0s clear it):
+  IP             10101100.00010000.00000101.01011110
+  Mask           11111111.11111111.11111111.11100000
+  IP & Mask      10101100.00010000.00000101.01000000
+
+Same network check (each IP AND'd with the /27 mask):
+  172.16.5.94/27 10101100.00010000.00000101.01000000
+  172.16.5.97    10101100.00010000.00000101.01100000
+Net 1:     172.16.5.64
+Net 2:     172.16.5.96
+DIFFERENT networks: send to the router
